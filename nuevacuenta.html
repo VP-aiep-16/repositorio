@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Formulario de Ejemplo</title>
+<link rel="stylesheet" type="text/css" href="assets/css/nuevacuenta.css" media="all" />
+<script Languaje=javascript SRC="assest/js/js.js"></script>
+</head>
+<body background="assets/img/bus1.jpg">
+ <div id="registrar">
+            <a href="index.html"</a>Regresar</a>
+    </div>
+    <div id="envoltura">
+        <div id="contenedor">
+            <div id="cabecera">
+            </div>
+            <div id="cuerpo">
+                <form id="form-login" action="phps/insertar.php" method="post" name="datos" >
+                    <p><label for="nombre">Nombre:</label></p>
+                        <input name="nombre" type="text" id="nombre" required class="nombre" pattern="[a-z]{3,10}" placeholder="ingresa tu nombre" autofocus=""/ ></p>
+                    <p><label for="apellido">Apellido:</label></p>
+                        <input name="apellido" type="text" id="apellido" class="apellidos" required pattern="[a-z]{4,12}" placeholder="ingresa tus apellidos" />
+                        </p>
+					<p><label for="rut">rut:</label></p>
+                        <input name="rut" type="number" id="rut" class="rut" placeholder="ingresa tu rut" min="1000000" max="30000000" required autofocus=""/>
+                        <select name="verif">
+                        <option value="-0">0</option>
+                        <option value="-1">1</option>
+                        <option value="-2">2</option>
+                        <option value="-3">3</option>
+                        <option value="-4">4</option>
+                        <option value="-5">5</option>
+                        <option value="-6">6</option>
+                        <option value="-7">7</option>
+                        <option value="-8">8</option>
+                        <option value="-9">9</option>
+                        <option value="-k">k</option>
+                        </select>
+                        </p>
+					<p><label for="numero">numero:</label></p>
+                        <input name="numero" type="number" min="910000000" max="999999999" id="numero" class="numero" placeholder="ingresa tu numero" required autofocus=""/ ></p>
+                    <p><label for="correo">Correo:</label></p>
+                        <input name="correo" type="email" id="correo" class="correo" required placeholder="ingresa tu correo" /></p>
+                    <p><label for="pass">contraseña:</label></p>
+                        <input name="pass" type="password" id="pass" class="pass" required pattern="[a-z,0-9]{6,12}" placeholder="ingresa tu contraseña"/ ></p>
+                    <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
+                </form>
+            </div>
+            <div id="pie">gracias por registrarse :D</div>
+        </div>
+ 
+    </div>					
+</body>
+</html>
